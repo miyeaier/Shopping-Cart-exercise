@@ -1,11 +1,5 @@
-import {
-  Container,
-  FormControl,
-  Navbar,
-  Badge,
-  Nav,
-  Dropdown,
-} from "react-bootstrap";
+import {Container,FormControl,Navbar,Badge,Nav,Dropdown,} from "react-bootstrap";
+import { GiShoppingCart }from "react-icons/gi"
 
 const Header = () => {
   return (
@@ -24,6 +18,7 @@ const Header = () => {
         <Nav>
           <Dropdown alignRight>
             <Dropdown.Toggle variant="success">
+              <GiShoppingCart color="white" fontSize="25px"/>
               <Badge>{10}</Badge>
             </Dropdown.Toggle>
             <Dropdown.Menu style={{ minWidth: 370 }}>
